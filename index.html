@@ -11,7 +11,44 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #ffffff;
     color: #111111;
-    padding: 40px 24px 60px;
+    padding: 0;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 56px;
+    background: #D4D5FF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-logo {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #111111;
+    text-decoration: none;
+  }
+
+  .nav-back {
+    font-size: 13px;
+    color: #111111;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0.7;
+    transition: opacity 0.15s;
+  }
+
+  .nav-back:hover { opacity: 1; }
+
+  .content {
+    padding: 32px 24px 60px;
   }
 
   .search-row {
@@ -221,6 +258,13 @@
 </head>
 <body>
 
+<nav class="top-nav">
+  <a href="https://nereye.framer.website" class="nav-logo">NEREYE</a>
+  <a href="https://nereye.framer.website" class="nav-back">← Ana sayfa</a>
+</nav>
+
+<div class="content">
+
 <div class="search-row">
   <input type="text" id="searchInput" placeholder="İlçe veya nokta ara..." oninput="render()" />
   <select id="districtSelect" onchange="render()">
@@ -232,6 +276,8 @@
 <div class="results-meta" id="resultsMeta"></div>
 <div id="detailPanel" style="display:none;"></div>
 <div class="grid" id="grid"></div>
+
+</div>
 
 <script>
 const CATS = [
