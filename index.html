@@ -267,6 +267,8 @@
   <a href="https://nereye.framer.website" class="nav-back">←</a>
 </nav>
 
+<div style="background:#FAEEDA;color:#633806;font-size:12px;font-family:'Nunito',sans-serif;font-weight:700;text-align:center;padding:8px 16px;letter-spacing:0.03em;">Beta — veriler güncellenmektedir</div>
+
 <div class="content">
 
 <div class="search-row">
@@ -301,18 +303,18 @@ const ICONS = {
 };
 
 const DATA = [
-  { id:1, name:"Kadıköy Geri Dönüşüm Merkezi", district:"Kadıköy", address:"Moda Cad. No:12, Kadıköy", hours:"Pzt–Cts 08:00–18:00", open:true, cats:["recyclable","electronics","textile"], note:"Ayrıştırılmış geri dönüşüm ve küçük e-atık kabul edilir. Torba dağıtımı yapılır." },
-  { id:2, name:"Beşiktaş Elektronik Atık Noktası", district:"Beşiktaş", address:"Çarşı Mah., Beşiktaş", hours:"Pzt–Cum 09:00–17:00", open:true, cats:["electronics"], note:"Telefon, laptop, kablo, pil kabul edilir. Beyaz eşya alınmaz." },
-  { id:3, name:"Üsküdar Tekstil Toplama", district:"Üsküdar", address:"Ahmediye Mah., Üsküdar", hours:"Her gün 08:00–20:00", open:true, cats:["textile"], note:"Her koşuldaki kıyafet, ayakkabı ve çanta kabul edilir." },
-  { id:4, name:"Ataşehir Tehlikeli Atık Deposu", district:"Ataşehir", address:"Atatürk Mah. İBB Tesisi", hours:"Çrş & Cts 10:00–16:00", open:false, cats:["hazardous"], note:"Boya, solvent, pil, floresan ampul. Randevu önerilir." },
-  { id:5, name:"Şişli Büyük Eşya Toplama", district:"Şişli", address:"Mecidiyeköy Lojistik Alanı", hours:"Salı & Perşembe 07:00–13:00", open:false, cats:["bulky","furniture"], note:"Kanepe, yatak, beyaz eşya. İBB 153 ile randevu alınabilir." },
-  { id:6, name:"Bakırköy Organik Kompost", district:"Bakırköy", address:"Sahil Parkı Yanı, Bakırköy", hours:"Her gün 07:00–21:00", open:true, cats:["organic"], note:"Yemek artığı ve bahçe atığı. Et ve süt ürünü kabul edilmez." },
-  { id:7, name:"Maltepe Karma Atık Noktası", district:"Maltepe", address:"Bağlarbaşı Cad. 45, Maltepe", hours:"Pzt–Cts 08:00–19:00", open:true, cats:["recyclable","textile","electronics"], note:"Çok kategorili bırakma noktası. Park yeri mevcut." },
-  { id:8, name:"Sarıyer Mobilya Bağış Merkezi", district:"Sarıyer", address:"Reşitpaşa Mah., Sarıyer", hours:"Pzt–Cum 10:00–17:00", open:true, cats:["furniture","bulky"], note:"Çalışan mobilya yeniden dağıtım için kabul edilir. Arızalı eşya sadece Cuma." },
-  { id:9, name:"Fatih İlaç ve Kimyasal Atık", district:"Fatih", address:"Aksaray Çevre Birimi", hours:"Perşembe 09:00–14:00", open:false, cats:["hazardous"], note:"Süresi dolmuş ilaç ve temizlik kimyasalı. Orijinal kapalı ambalajda getirilmeli." },
-  { id:10, name:"Pendik Geri Dönüşüm Parkı", district:"Pendik", address:"Kurtköy Organize San., Pendik", hours:"Her gün 08:00–22:00", open:true, cats:["recyclable","bulky","furniture","electronics"], note:"Anadolu yakasının en büyük çok kategorili parkı. Geri dönüşüm için 24 saat açık." },
-  { id:11, name:"Kartal Elektronik Toplama", district:"Kartal", address:"Esentepe Mah., Kartal", hours:"Pzt–Cum 09:00–18:00", open:true, cats:["electronics"], note:"Küçük ev aletleri, telefon, tablet kabul edilir." },
-  { id:12, name:"Beylikdüzü Tekstil Kutusu", district:"Beylikdüzü", address:"Marmara Mah. AVM Yanı", hours:"Her gün 08:00–22:00", open:true, cats:["textile"], note:"Alışveriş merkezi önünde sabit toplama kutusu." },
+  { id:1, name:"Kadıköy 1. Sınıf Atık Getirme Merkezi", district:"Kadıköy", address:"Hasanpaşa Mah. — Kadıköy Belediyesi Bahçesi", hours:"Pzt–Cum 08:30–17:00, Cts 09:00–16:00", open:true, cats:["recyclable","electronics","textile","organic","hazardous"], note:"14 farklı atık türü kabul edilir: elektronik, tekstil, organik, tehlikeli atık, pil, ilaç ve daha fazlası. Kaynak: Kadıköy Belediyesi." },
+  { id:2, name:"Kadıköy Tekstil Bağış Birimi", district:"Kadıköy", address:"Eğitim Mah. Ahsen Çıkmazı Sok. Sadıkoğlu Plaza 4 No:2/3", hours:"Pzt–Cum 09:00–17:00", open:true, cats:["textile"], note:"Kullanılabilir durumdaki kıyafet ve tekstil ürünleri ihtiyaç sahiplerine ulaştırılıyor. Kaynak: Kadıköy Belediyesi." },
+  { id:3, name:"Dolmabahçe Hizmet Birimi (İBB)", district:"Beşiktaş", address:"Vişnezade Mah. Kadırgalar Cad. No:53", hours:"Pzt–Cum 08:00–17:00", open:true, cats:["recyclable","electronics"], note:"İBB'ye bağlı şehir temizliği hizmet birimi. Geri dönüşüm ve elektronik atık kabul edilir. Kaynak: İBB." },
+  { id:4, name:"Üsküdar Atık Yönetimi Birimi", district:"Üsküdar", address:"Mimar Sinan Mah. Çavuşdere Cad. No:35 — Üsküdar Belediyesi Hizmet Binası", hours:"Salı–Cum 09:00–17:00", open:true, cats:["recyclable","textile","electronics"], note:"Dönüşümde Üsküdar Modeli kapsamında hizmet verir. Toplanan atık geliriyle sosyal yardım yapılıyor. Kaynak: Üsküdar Belediyesi." },
+  { id:5, name:"Baruthane Katı Atık Aktarma İstasyonu (İBB)", district:"Şişli", address:"Paşa Mah. Piyalepaşa Bulvarı No:74", hours:"Pzt–Cum 08:00–17:00", open:true, cats:["recyclable","bulky"], note:"İBB'ye bağlı aktarma istasyonu. Büyük eşya ve geri dönüşüm atıkları kabul edilir. Kaynak: İBB." },
+  { id:6, name:"Maltepe Atık Getirme Merkezi", district:"Maltepe", address:"Feyzullah Mah. Plaj Yolu No:1", hours:"Pzt–Cts 08:00–18:00", open:true, cats:["recyclable","electronics","textile"], note:"Hilltown AVM ve Piazza AVM'de de bırakma noktaları mevcut. Kaynak: Maltepe Belediyesi." },
+  { id:7, name:"Elektronik Atık İşleme ve Geri Kazanım Tesisi (İBB)", district:"Bahçelievler", address:"Çobançeşme Mah. Sanayi Cad. Yenibosna", hours:"Pzt–Cum 08:00–17:00", open:true, cats:["electronics"], note:"İBB'nin resmi elektronik atık işleme tesisi. Telefon, bilgisayar, kablo, pil ve küçük ev aletleri kabul edilir. Kaynak: İBB." },
+  { id:8, name:"Gaziosmanpaşa 1. Sınıf Atık Getirme Merkezi", district:"Gaziosmanpaşa", address:"Karayolları Mah. 568. Sok. No:17", hours:"Pzt–Cts 08:00–17:00", open:true, cats:["recyclable","electronics","textile","hazardous"], note:"22 farklı tehlikeli ve tehlikesiz atık türü kabul edilir. Kaynak: Gaziosmanpaşa Belediyesi." },
+  { id:9, name:"Edirnekapı Hizmet Birimi (İBB)", district:"Eyüpsultan", address:"Topçular Mah. Bostan Aralığı Sk. — Edirnekapı İETT Garajı Yanı", hours:"Pzt–Cum 08:00–17:00", open:true, cats:["recyclable","bulky"], note:"İBB şehir temizliği hizmet birimi. Geri dönüşüm ve büyük eşya kabul edilir. Kaynak: İBB." },
+  { id:10, name:"Maltepe Hizmet Birimi (İSTAÇ)", district:"Maltepe", address:"Zümrütevler, Adatepe Cad. No:60", hours:"Pzt–Cum 08:00–17:00", open:true, cats:["recyclable","bulky","electronics"], note:"İSTAÇ'a bağlı hizmet birimi. Çok kategorili atık kabul eder. Kaynak: İSTAÇ." },
+  { id:11, name:"Bakkalköy Katı Atık Aktarma İstasyonu (İSTAÇ)", district:"Ataşehir", address:"Küçükbakkalköy Mah. Prof. Dr. Hıfzı Özcan Cad.", hours:"Pzt–Cum 08:00–17:00", open:true, cats:["recyclable","bulky"], note:"İSTAÇ'a bağlı Anadolu Yakası aktarma istasyonu. Kaynak: İSTAÇ." },
+  { id:12, name:"Ümraniye Hizmet Birimi (İSTAÇ)", district:"Ümraniye", address:"Hekimbaşı Mah. Küçüksu Cad. Asfalt Sok.", hours:"Pzt–Cum 08:00–17:00", open:true, cats:["recyclable","electronics"], note:"İSTAÇ'a bağlı hizmet birimi. Geri dönüşüm ve elektronik atık kabul edilir. Kaynak: İSTAÇ." },
 ];
 
 let activeFilter = "all";
@@ -365,7 +367,6 @@ function showDetail(id) {
       <div class="detail-district">${loc.district}</div>
       <div class="detail-row"><span class="detail-label">Adres</span><span class="detail-value">${loc.address}</span></div>
       <div class="detail-row"><span class="detail-label">Saatler</span><span class="detail-value">${loc.hours}</span></div>
-      <div class="detail-row"><span class="detail-label">Durum</span><span class="detail-value" style="display:flex;align-items:center;gap:6px;"><span class="dot" style="background:${dot}"></span>${status}</span></div>
       <div class="detail-tags">${loc.cats.map(c => `<span class="tag ${c}">${ICONS[c]} ${CATS.find(x=>x.id===c)?.label || c}</span>`).join("")}</div>
       <div class="note-box">${loc.note}</div>
     </div>
@@ -389,8 +390,6 @@ function render() {
   }
   grid.innerHTML = filtered.map(loc => {
     const primary = loc.cats[0];
-    const dot = loc.open ? "#1A3A2A" : "#E24B4A";
-    const status = loc.open ? "Açık" : "Kapalı";
     return `<div class="card" onclick="showDetail(${loc.id})">
       <div class="card-top">
         <div>
@@ -399,7 +398,7 @@ function render() {
         </div>
         <div class="card-icon">${ICONS[primary] || "📍"}</div>
       </div>
-      <div class="card-status"><span class="dot" style="background:${dot}"></span>${status} · ${loc.hours.split(" ")[0]}</div>
+      <div class="card-status">${loc.hours}</div>
       <div class="card-tags">${loc.cats.map(c => `<span class="tag ${c}">${CATS.find(x=>x.id===c)?.label || c}</span>`).join("")}</div>
     </div>`;
   }).join("");
